@@ -1,0 +1,93 @@
+EESchema Schematic File Version 4
+LIBS:workshop-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5C12CAB9
+P 2350 2300
+F 0 "R1" H 2420 2346 50  0000 L CNN
+F 1 "R" H 2420 2255 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2280 2300 50  0001 C CNN
+F 3 "~" H 2350 2300 50  0001 C CNN
+	1    2350 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5C12CB35
+P 2650 2300
+F 0 "D1" H 2642 2045 50  0000 C CNN
+F 1 "LED" H 2642 2136 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 2650 2300 50  0001 C CNN
+F 3 "~" H 2650 2300 50  0001 C CNN
+	1    2650 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5C12CC92
+P 2600 2800
+F 0 "J1" V 2473 2880 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" V 2750 2250 50  0000 L CNN
+F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MKDS1.5-2pol" H 2600 2800 50  0001 C CNN
+F 3 "~" H 2600 2800 50  0001 C CNN
+	1    2600 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5C12D06D
+P 3000 2300
+F 0 "SW1" H 3000 2585 50  0000 C CNN
+F 1 "SW_Push" H 3000 2494 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH-12mm" H 3000 2500 50  0001 C CNN
+F 3 "" H 3000 2500 50  0001 C CNN
+	1    3000 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2600 3200 2600
+Wire Wire Line
+	3200 2600 3200 2300
+Wire Wire Line
+	2500 2600 2200 2600
+$Comp
+L power:GND #PWR0101
+U 1 1 5C192D2B
+P 3200 2600
+F 0 "#PWR0101" H 3200 2350 50  0001 C CNN
+F 1 "GND" H 3205 2427 50  0000 C CNN
+F 2 "" H 3200 2600 50  0001 C CNN
+F 3 "" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 2600
+$Comp
+L power:+5V #PWR0102
+U 1 1 5C192D9F
+P 2200 2300
+F 0 "#PWR0102" H 2200 2150 50  0001 C CNN
+F 1 "+5V" H 2215 2473 50  0000 C CNN
+F 2 "" H 2200 2300 50  0001 C CNN
+F 3 "" H 2200 2300 50  0001 C CNN
+	1    2200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2600 2200 2300
+Connection ~ 2200 2300
+$EndSCHEMATC
